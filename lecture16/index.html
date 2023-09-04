@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <!-- TOPIC:
+    BLOCK ELEMENTS
+    INLINE ELEMENTS
+    WE CAN CONVERT BOTH OF THEM INTO ANOTHER==> REDER TO LINE 31
+    INLINE-BLOCK ELEMENTS: ACT AS INLINE BLOCK BUT HEIGHT AND WIDTH CAN BE CHANGED==> REFER TO LINE 35
+    BOX-SIZING-BORDER-BOX 
+    box-sizaing: border-box is used when we do not want to extend our box size with padding and margin the content will shrink according to the specification. !-->
+
+
     <style>
         *{
             margin: 0;
@@ -14,7 +25,16 @@
             width:300px;
             height: 300px;
             border: black 1px solid;
-        }
+            padding: 20px;
+         }
+         span{
+            /* display: block; */
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+
+         }
        /*  div{
             border:red solid 1px
         } */
@@ -22,6 +42,8 @@
 </head>
 <body>
     
+    <!-- BLOCK ELEMENTS: ALWATS USE DIFFERENT LINE,WIDTH IS USED FULL FROM THE LEFT TO RIGHT ,CUSTOM HEIGHT AND WIDTH CAN BE IMPLEMENTED -->
+
     <!-- <div>
         Welcome to Lecture 16
     </div> -->
@@ -31,8 +53,21 @@
     </div> -->
 
 
-    <div class="box">
+    <!-- <div class="box">
         Welcome to CodeHelp
-    </div>
+    </div> -->
+
+    <!-- INLINE ELEMENTS:TRY TO GET ON THE SAME LINE,WIDTH IS USED AS SAME AS CONTENT SIZE,CUSTOM HEIGHT AND WIDTH CAN NOT BE IMPLEMENTED,
+        MARGIN CAN BE USED HORIZONTILY ONLY,PADDING CAN BE IMPLEMENTED-->
+        
+
+    <span>
+        HEY BOY
+    </span>
+
+    <span>
+        HEY GIRL
+    </span>
+
 </body>
 </html>

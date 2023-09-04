@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <!--  TOPICS:CSS POSITION PROPERTY:HOW I WANT TO POSITION MY CONTENT
+    STATIC:IT IS CONSIDER TO BE DEFAULT
+    RELATIVE:The position will be changed but the gap wiil be there means the space that has been taken will be visible on browser
+    ABSOLUTE:The position will be changed but it will overlap on the nearest image or any thing
+    FIXED:The position will be fixed when we scroll down the image will be coming with scroll because its fixed on the entire web page
+    STICKY:It behaves as fixed but you have to set where you want to position with top,right,left,bottom but only in its clostest ancestor when the container or div changes it left the image there.    -->
+
+    <style>
+        div{
+            border: 1px solid black;
+            height: 8000px;
+        }
+        img{
+            margin: 10px;
+        }
+        .image2{
+           /*  position: relative;
+            top: 100px;
+            left: 200px; */
+           /*  position: absolute;
+            left: 200px;
+            bottom: 200px;
+ */
+        }
+        .container{
+            position: relative;
+        }
+        .image4{
+            position: fixed;
+        }
+        .image3{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: red;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <img
+         src="pic1.jpg"
+         alt="pic1"
+         width="300px"
+         height="300px"
+         class="image1"
+
+         />
+
+         <img
+         src="pic2.jpg"
+         alt="pic2"
+         width="300px"
+         height="300px"
+         class="image2"
+
+         
+
+         />
+         <img
+         src="pic3.jpg"
+         alt="pic3"
+         width="300px"
+         height="300px"
+         class="image3"
+
+
+         />
+         <img
+         src="pic4.jpg"
+         alt="pic4"
+         width="300px"
+         height="300px"
+         class="image4"
+
+
+         />
+    
+    </div>
+
+    <div class="box">
+        
+    </div>
+    
+
+</body>
+</html>
