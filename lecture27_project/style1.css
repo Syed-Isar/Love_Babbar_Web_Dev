@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    min-height: 930px;
+    
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    width: 360px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 25px;
+    /* padding: 20px; */
+}
+
+.card img{
+    width: 100%;
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* padding: 20px; */
+    width: 75%;
+    text-align: center;
+}
+
+
+#amountbox{
+    width:80% ;
+    height: 10%;
+    background-color:black ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+@media (max-width:450px){
+    #amountbox,  #leftBox{
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    
+}
+
+#textAmountBox{
+    color: pink;
+}
+
+.imgBox img{
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
+#leftBox{
+    /* width: fit-content; */
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+#rightBox a{
+    color: pink;
+ }
+
+#paymentbutton{
+    width: 80%;
+    height: 9%;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 128);
+    color: white;
+    box-shadow: 0 10px 20px rgba(90, 86, 86, 0.19), 0 6px 6px rgba(3, 3, 3, 0.23);
+}
+
+.cancelBox a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+
+}
