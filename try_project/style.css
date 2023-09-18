@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.navcontainer{
+    width: 100%; 
+    height: 50px;
+    overflow-x: hidden;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 51%, #FFCC70 53%, #C850C0 56%, #ffffff 99%, #ffffff 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navlist{
+    color: whitesmoke;
+    display: flex;
+    gap: 30px;
+
+}
+
+#b1,#b2{
+    
+    color:white;
+    border: 0.1rem solid black;
+    background-color: rgba(255, 192, 203, 0.116);
+    border-radius: 10px;
+    padding: 0.52rem;
+    /* font-family: ; */
+} 
+
+h1{
+    color: white;
+}
+
+.dataBox{
+    width: 100%;
+    height: 700px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 300px; */
+}
+
+.textBox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+
+#contentBox p{
+    font-size: 60px;
+ 
+} 
+
+#descBox p{
+    font-size: 30px;
+ 
+} 
+
+#button1,#button2{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 0.52rem;
+    color: black;
+}
+
+
+.imgBox{
+    width: 50%;
+    height: 100%;
+   
+}
+
+ .imgBox img{
+    width: 100%;
+    height: 100%;
+} 
