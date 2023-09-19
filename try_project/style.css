@@ -12,8 +12,9 @@
     width: 100%; 
     height: 50px;
     overflow-x: hidden;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 51%, #FFCC70 53%, #C850C0 56%, #ffffff 99%, #ffffff 100%);
+    /* background-color: #4158D0; */
+    /* background-image: linear-gradient(43deg,rgba(250, 246, 246, 0.377) 100%, rgb(168, 166, 166) 90%,white 55%); */
+    /* background: none; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -22,35 +23,43 @@
 }
 
 .navlist{
-    color: whitesmoke;
+    /* color: whitesmoke; */
     display: flex;
     gap: 30px;
 
 }
 
-#b1,#b2{
+#b1{
     
     color:white;
-    border: 0.1rem solid black;
-    background-color: rgba(255, 192, 203, 0.116);
+    /* border: 0.1rem solid black; */
+    /* background-color: rgba(255, 192, 203, 0.116); */
+    background-color: #6674cc;
+    border-radius: 10px;
+    padding: 0.52rem;
+} 
+
+#b2{
+    /* color:white; */
+    /* border: 0.1rem solid black; */
+    /* background-color: rgba(255, 192, 203, 0.116); */
+    background-color: transparent;
     border-radius: 10px;
     padding: 0.52rem;
     /* font-family: ; */
-} 
-
-h1{
-    color: white;
 }
+
 
 .dataBox{
     width: 100%;
-    height: 700px;
+    height: 800px;
     border: 1px solid black;
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    /* position:absolute; */
     /* gap: 300px; */
 }
 
@@ -70,6 +79,41 @@ h1{
     font-size: 60px;
  
 } 
+
+.head{
+    border-right:  5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        changeParagraph 1s steps(17),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50%{border-color: transparent;}
+    
+}
+
+@keyframes changeParagraph {
+    from { width: 70%}
+}  
+
+.head::after{
+    content: attr(changeParagraph);
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: rev 2s linear infinite ;
+
+}
+@keyframes rev {
+
+    20%{
+        width: 100;
+    }
+    
+}
 
 #descBox p{
     font-size: 30px;
@@ -93,4 +137,16 @@ h1{
  .imgBox img{
     width: 100%;
     height: 100%;
+    background: none;
 } 
+
+#button1{
+    background-color:#6674cc;;
+}
+
+.ratingBox{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background-color:#8a95e0 ;
+}
