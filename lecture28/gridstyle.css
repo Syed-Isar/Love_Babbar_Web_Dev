@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(75, 67, 67);
+    display: grid;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.a, .b, .c, .d{
+    height: 100px;
+    width: 100px;
+
+    background-color: green;
+    border: 1px solid black;
+}
